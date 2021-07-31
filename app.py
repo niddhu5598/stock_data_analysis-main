@@ -8,11 +8,11 @@ st.sidebar.header("Stock Data Analysis")
 st.sidebar.image("up.png",width=100)
 
 # to run program, run on terminal
-# 1st step:
+# 1st step :
 # ..\Scripts\activate
 # 2nd step:
 # streamlit run app.py
-# In case of an error, ensure the folder open is:-
+# In case of an error, ensure the folder open is:-stock_data_analysis-main
 # C:\Users\HP\py-venvs\stocks\stock_data_analysis-main
 
 @st.cache
