@@ -7,9 +7,17 @@ st.set_page_config(page_title='stock data analysis')
 st.sidebar.header("Stock Data Analysis")
 st.sidebar.image("up.png",width=100)
 
+# to run program, run on terminal
+# 1st step:
+# ..\Scripts\activate
+# 2nd step:
+# streamlit run app.py
+# In case of an error, ensure the folder open is:-
+# C:\Users\HP\py-venvs\stocks\stock_data_analysis-main
+
 @st.cache
 def load_data():
-    return pd.read_csv('NIFTY50_all.csv',parse_dates=['Date'])
+    return pd.read_csv('data/NIFTY50_all.csv',parse_dates=['Date'])
 
 def home(title):
     df = load_data()
